@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Data: don't commit corpora (bank PDFs are copyrighted) or generated artifacts.
+# Keep the docs/ folder present via .gitkeep so `build_index` has a target dir.
+data/raw/*
+!data/raw/docs
+data/raw/docs/*
+!data/raw/docs/.gitkeep
+data/processed/
+
+# Model / HF caches (if any land in-repo)
+*.bin
+.cache/
